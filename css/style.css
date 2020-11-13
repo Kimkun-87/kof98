@@ -56,6 +56,21 @@ body{
     width: 100%;
 }
 
+.nav__menu .fighters, .nav__menu .info{
+    color: var(--color-white);
+    font-size: 20px;
+    transition: all 200ms ease;
+}
+
+.nav__menu .info:hover{
+    color: var(--color-orange);
+}
+
+.nav__menu .fighters:hover{
+    color: var(--color-orange);
+
+}
+
 /* TITLE 영역 */
 .title{
     padding-top: 50px;
@@ -90,3 +105,31 @@ body{
     padding: 0 5px;
 }
 
+@media screen and (max-width: 380px){
+    .navbar a img{
+        padding-right: 60px;
+    }
+    
+    .title h1{
+        display: none;
+    }
+
+    .nav__menu .fighters, .nav__menu .info{
+        display: none;
+    }
+    .home{
+        display: inline;
+    }
+
+    .home__content{
+        width: 100%;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .home__content img{
+        width: 60px;
+    }
+
+
+}
